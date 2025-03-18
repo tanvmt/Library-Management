@@ -1,0 +1,267 @@
+.login-panel {
+    background-color: #e6e6e6;
+    border: 1px solid;
+    border-color: #ffffff;
+    border-radius: 15px;
+    position: relative;
+    width: 778px;
+  }
+  
+  .login-panel .text-wrapper {
+    color: #0429be;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    height: 78px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0px 4px 4px #00000040;
+    top: 12px;
+    width: 386px;
+  }
+  
+  .login-panel .overlap {
+    position: absolute;
+    top: 12px;
+    width: 386px;
+  }
+  
+  .login-panel .ng-k {
+    color: #0429be;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    height: 78px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0px 4px 4px #00000040;
+    top: 0;
+    width: 386px;
+  }
+  
+  .login-panel .line {
+    height: 2px;
+    left: 43px;
+    position: absolute;
+    width: 300px;
+  }
+  
+  .login-panel .div {
+    color: #000000;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 26px;
+    font-weight: 500;
+    height: 36px;
+    left: 50px;
+    letter-spacing: 0;
+    line-height: 39px;
+    position: absolute;
+    text-align: center;
+    top: 390px;
+    white-space: nowrap;
+    width: 237px;
+  }
+  
+  .login-panel .login-button {
+    height: 66px;
+    left: 155px;
+    position: absolute;
+    top: 478px;
+    width: 470px;
+  }
+  
+  .login-panel .overlap-group {
+    background-color: #0429be;
+    border-radius: 15px;
+    height: 66px;
+    position: relative;
+    width: 468px;
+  }
+  
+  .login-panel .text-wrapper-2 {
+    color: #ffffff;
+    font-family: "Inter-Bold", Helvetica;
+    font-size: 26px;
+    font-weight: 700;
+    height: 45px;
+    left: 52px;
+    letter-spacing: 0;
+    line-height: 39px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    white-space: nowrap;
+    width: 364px;
+  }
+  
+  .login-panel .group {
+    height: 124px;
+    left: 50px;
+    position: absolute;
+    top: 258px;
+    width: 681px;
+  }
+  
+  .login-panel .div-wrapper {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #9b9393;
+    border-radius: 10px;
+    height: 63px;
+    left: 0;
+    position: absolute;
+    top: 60px;
+    width: 677px;
+  }
+  
+  .login-panel .text-wrapper-3 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    height: 41px;
+    left: 20px;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    top: 12px;
+    white-space: nowrap;
+    width: 644px;
+  }
+  
+  .login-panel .label {
+    color: #000000;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 28px;
+    font-weight: 500;
+    height: 49px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 172px;
+  }
+  
+  .login-panel .group-2 {
+    height: 123px;
+    left: 50px;
+    position: absolute;
+    top: 126px;
+    width: 681px;
+  }
+  
+  .login-panel .overlap-2 {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #9b9393;
+    border-radius: 10px;
+    height: 62px;
+    left: 0;
+    position: absolute;
+    top: 61px;
+    width: 677px;
+  }
+  
+  .login-panel .text-wrapper-4 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    height: 41px;
+    left: 17px;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    text-decoration: underline;
+    top: 10px;
+    white-space: nowrap;
+    width: 644px;
+  }
+  
+  .login-panel .label-2 {
+    color: #000000;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 28px;
+    font-weight: 500;
+    height: 48px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 671px;
+  }
+  
+  .login-panel .text-wrapper-5 {
+    color: #0429be;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    height: 78px;
+    left: 392px;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0px 4px 4px #00000040;
+    top: 12px;
+    width: 386px;
+  }
+  
+  .login-panel .overlap-group-wrapper {
+    height: 66px;
+    left: 155px;
+    position: absolute;
+    top: 520px;
+    width: 470px;
+  }
+  
+  .login-panel .p {
+    color: #ff0000;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    height: 42px;
+    left: 142px;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    top: 446px;
+    white-space: nowrap;
+  }
+  
+  .login-panel.register {
+    height: 577px;
+  }
+  
+  .login-panel.login {
+    height: 619px;
+  }
+  
+  .login-panel.register .overlap {
+    height: 80px;
+    left: 392px;
+  }
+  
+  .login-panel.login .overlap {
+    height: 79px;
+    left: 0;
+  }
+  
+  .login-panel.register .line {
+    top: 78px;
+  }
+  
+  .login-panel.login .line {
+    top: 77px;
+  }
+  
