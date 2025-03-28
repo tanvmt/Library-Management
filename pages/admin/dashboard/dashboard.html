@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Library Management</title>
     <script src="/assets/components/admin-header/admin-header.js"></script>
     <script src="/assets/components/admin-sidebar/admin-sidebar.js"></script>
     <link rel="stylesheet" href="/assets/components/admin-header/admin-header.css">
@@ -13,198 +13,195 @@
 </head>
 <body>
     <header id="admin-header"></header>
-    <body>
-        <header id="admin-header"></header>
-        <div class="dashboard-layout">
-            <div id="admin-sidebar"></div>
-            <div class="main-container">
-                <header class="page-header">
-                    <h1>Admin Dashboard</h1>
-                </header>
-                <section class="dashboard-stats">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title" style="color: gray;">Total Books</span>
-                            <span class="card-number">1,254</span>
-                            <span class="positive" style="font-size: 0.8em;"><span style="font-weight: bold;">+24</span> new this month</span>
-                        </div>
-                        <div class="card-icon">
-                            <div class="card-icon-1 blue-icon large-icon">
-                                <i class="fa-solid fa-book"></i>
-                            </div>
+    <div class="dashboard-layout">
+        <div id="admin-sidebar"></div>
+        <div class="main-container">
+            <header class="page-header">
+                <h1>Admin Dashboard</h1>
+            </header>
+            <section class="dashboard-stats">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title" style="color: gray;">Total Books</span>
+                        <span class="card-number">1,254</span>
+                        <span class="positive" style="font-size: 0.8em;"><span style="font-weight: bold;">+24</span> new this month</span>
+                    </div>
+                    <div class="card-icon">
+                        <div class="card-icon-1 blue-icon large-icon">
+                            <i class="fa-solid fa-book"></i>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title" style="color: gray;">Registerd Users</span>
-                            <span class="card-number">842</span>
-                            <span class="positive" style="font-size: 0.8em;"><span style="font-weight: bold;">+12</span> new this month</span>
-                        </div>
-                        <div class="card-icon">
-                            <div class="card-icon-1 purple-icon large-icon">
-                                <i class="fa-solid fa-user"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title" style="color: gray;">Active Borrowings</span>
-                            <span class="card-number">328</span>
-                            <span class="neutral" style="font-size: 0.8em;"><span style="font-weight: bold;">87%</span> return rate</span>
-                        </div>
-                        <div class="card-icon">
-                            <div class="card-icon-1 green-icon large-icon">
-                                <i class="fa-solid fa-book-open"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title" style="color: gray;">Overdue Books</span>
-                            <span class="card-number">42</span>
-                            <span class="negative" style="font-size: 0.8em;"><span style="font-weight: bold;">+5</span> since last week</span>
-                        </div>
-                        <div class="card-icon">
-                            <div class="card-icon-1 red-icon large-icon">
-                                <i class="fa-solid fa-triangle-exclamation"></i>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <div class="main-sections">
-                    <section class="recent-activities">
-                        <h2>Recent Activities</h2>
-                        <ul>
-                            <li>
-                                <div class="recent-activities-1">
-                                    <div class="card-icon">
-                                        <div class="card-icon-1 blue-icon small-icon">
-                                            <i class="fa-solid fa-book"></i>
-                                        </div> 
-                                    </div>
-                                    <div class="content">
-                                        <span class="action">Book "The Great Gatsby" has been borrowed</span>
-                                        <span class="user">John Doe</span>
-                                    </div>
-                                </div>
-                                <span class="time">10 minutes ago</span>
-                            </li>
-                            <li>
-                                <div class="recent-activities-1">
-                                    <div class="card-icon">
-                                        <div class="card-icon-1 green-icon small-icon">
-                                            <i class="fa-solid fa-book-open"></i>
-                                        </div> 
-                                    </div>
-                                    <div class="content">
-                                        <span class="action">Book "To Kill a Mockingbird" has been returned</span>
-                                        <span class="user">Jane Smith</span>
-                                    </div>
-                                </div>
-                                <span class="time">45 minutes ago</span>
-                            </li>
-                            <li>
-                                <div class="recent-activities-1">
-                                    <div class="card-icon">
-                                        <div class="card-icon-1 purple-icon small-icon">
-                                            <i class="fa-solid fa-user"></i>
-                                        </div> 
-                                    </div>
-                                    <div class="content">
-                                        <span class="action">New user registered</span>
-                                        <span class="user">Robert Johnson</span>
-                                    </div>
-                                </div>
-                                <span class="time">2 hours ago</span>
-                            </li>
-                            <li>
-                                <div class="recent-activities-1">
-                                    <div class="card-icon">
-                                        <div class="card-icon-1 red-icon small-icon">
-                                            <i class="fa-solid fa-triangle-exclamation"></i>
-                                        </div> 
-                                    </div>
-                                    <div class="content">
-                                        <span class="action">Book "1984" is now overdue</span>
-                                        <span class="user">Emily Wilson</span>
-                                    </div>
-                                </div>
-                                <span class="time">3 hours ago</span>
-                            </li>       
-                            <li>
-                                <div class="recent-activities-1">
-                                    <div class="card-icon">
-                                        <div class="card-icon-1 blue-icon small-icon">
-                                            <i class="fa-solid fa-book"></i>
-                                        </div> 
-                                    </div>
-                                    <div class="content">
-                                        <span>Book "Pride and Prejudice" has been borrowed</span>
-                                        <span class="user">Michael Brown</span>
-                                    </div>
-                                </div>
-                                <span class="time">5 hours ago</span>
-                            </li>
-                        </ul>
-                        <a href="#" class="view-all">View All Activities</a>
-                    </section>
-                    <section class="popular-books">
-                        <h2>Popular Books</h2>
-                        <ul>
-                            <li>
-                                <div class="book-cover">
-                                    <span class="rank-badge">1</span>
-                                </div>
-                                <div class="book-details">
-                                    <span class="book-title">The Great Gatsby</span>
-                                    <span class="author">F. Scott Fitzgerald</span>
-                                    <span class="borrow-count">42 <span style="font-weight: 100;">times borrowed</span></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="book-cover">
-                                    <span class="rank-badge">2</span>
-                                </div>
-                                <div class="book-details">
-                                    <span class="book-title">To Kill a Mockingbird</span>
-                                    <span class="author">Harper Lee</span>
-                                    <span class="borrow-count">38 <span style="font-weight: 100;">times borrowed</span></span>
-                                </div>
-                            </li><li>
-                                <div class="book-cover">
-                                    <span class="rank-badge">3</span>
-                                </div>
-                                <div class="book-details">
-                                    <span class="book-title">T1984</span>
-                                    <span class="author">George Orwell</span>
-                                    <span class="borrow-count">35 <span style="font-weight: 100;">times borrowed</span></span>
-                                </div>
-                            </li><li>
-                                <div class="book-cover">
-                                    <span class="rank-badge">4</span>
-                                </div>
-                                <div class="book-details">
-                                    <span class="book-title">The Hobbit</span>
-                                    <span class="author">J.R.R. Tolkien</span>
-                                    <span class="borrow-count">31 <span style="font-weight: 100;">times borrowed</span></span>
-                                </div>
-                            </li><li>
-                                <div class="book-cover">
-                                    <span class="rank-badge">5</span>
-                                </div>
-                                <div class="book-details">
-                                    <span class="book-title">Harry Potter and the Philosopher's Stone</span>
-                                    <span class="author">J.K. Rowling</span>
-                                    <span class="borrow-count">29 <span style="font-weight: 100;">times borrowed</span></span>
-                                </div>
-                            </li>
-                        </ul>
-                        <a href="#" class="view-all">View Full Report</a>
-                    </section>
                 </div>
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title" style="color: gray;">Registerd Users</span>
+                        <span class="card-number">842</span>
+                        <span class="positive" style="font-size: 0.8em;"><span style="font-weight: bold;">+12</span> new this month</span>
+                    </div>
+                    <div class="card-icon">
+                        <div class="card-icon-1 purple-icon large-icon">
+                            <i class="fa-solid fa-user-group"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title" style="color: gray;">Active Borrowings</span>
+                        <span class="card-number">328</span>
+                        <span class="neutral" style="font-size: 0.8em;"><span style="font-weight: bold;">87%</span> return rate</span>
+                    </div>
+                    <div class="card-icon">
+                        <div class="card-icon-1 green-icon large-icon">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title" style="color: gray;">Overdue Books</span>
+                        <span class="card-number">42</span>
+                        <span class="negative" style="font-size: 0.8em;"><span style="font-weight: bold;">+5</span> since last week</span>
+                    </div>
+                    <div class="card-icon">
+                        <div class="card-icon-1 red-icon large-icon">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="main-sections">
+                <section class="recent-activities">
+                    <h2>Recent Activities</h2>
+                    <ul>
+                        <li>
+                            <div class="recent-activities-1">
+                                <div class="card-icon">
+                                    <div class="card-icon-1 blue-icon small-icon">
+                                        <i class="fa-solid fa-book"></i>
+                                    </div> 
+                                </div>
+                                <div class="content">
+                                    <span class="action">Book "The Great Gatsby" has been borrowed</span>
+                                    <span class="user">John Doe</span>
+                                </div>
+                            </div>
+                            <span class="time">10 minutes ago</span>
+                        </li>
+                        <li>
+                            <div class="recent-activities-1">
+                                <div class="card-icon">
+                                    <div class="card-icon-1 green-icon small-icon">
+                                        <i class="fa-solid fa-book-open"></i>
+                                    </div> 
+                                </div>
+                                <div class="content">
+                                    <span class="action">Book "To Kill a Mockingbird" has been returned</span>
+                                    <span class="user">Jane Smith</span>
+                                </div>
+                            </div>
+                            <span class="time">45 minutes ago</span>
+                        </li>
+                        <li>
+                            <div class="recent-activities-1">
+                                <div class="card-icon">
+                                    <div class="card-icon-1 purple-icon small-icon">
+                                        <i class="fa-solid fa-user"></i>
+                                    </div> 
+                                </div>
+                                <div class="content">
+                                    <span class="action">New user registered</span>
+                                    <span class="user">Robert Johnson</span>
+                                </div>
+                            </div>
+                            <span class="time">2 hours ago</span>
+                        </li>
+                        <li>
+                            <div class="recent-activities-1">
+                                <div class="card-icon">
+                                    <div class="card-icon-1 red-icon small-icon">
+                                        <i class="fa-solid fa-triangle-exclamation"></i>
+                                    </div> 
+                                </div>
+                                <div class="content">
+                                    <span class="action">Book "1984" is now overdue</span>
+                                    <span class="user">Emily Wilson</span>
+                                </div>
+                            </div>
+                            <span class="time">3 hours ago</span>
+                        </li>       
+                        <li>
+                            <div class="recent-activities-1">
+                                <div class="card-icon">
+                                    <div class="card-icon-1 blue-icon small-icon">
+                                        <i class="fa-solid fa-book"></i>
+                                    </div> 
+                                </div>
+                                <div class="content">
+                                    <span>Book "Pride and Prejudice" has been borrowed</span>
+                                    <span class="user">Michael Brown</span>
+                                </div>
+                            </div>
+                            <span class="time">5 hours ago</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="view-all">View All Activities</a>
+                </section>
+                <section class="popular-books">
+                    <h2>Popular Books</h2>
+                    <ul>
+                        <li>
+                            <div class="book-cover">
+                                <span class="rank-badge">1</span>
+                            </div>
+                            <div class="book-details">
+                                <span class="book-title">The Great Gatsby</span>
+                                <span class="author">F. Scott Fitzgerald</span>
+                                <span class="borrow-count">42 <span style="font-weight: 100;">times borrowed</span></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="book-cover">
+                                <span class="rank-badge">2</span>
+                            </div>
+                            <div class="book-details">
+                                <span class="book-title">To Kill a Mockingbird</span>
+                                <span class="author">Harper Lee</span>
+                                <span class="borrow-count">38 <span style="font-weight: 100;">times borrowed</span></span>
+                            </div>
+                        </li><li>
+                            <div class="book-cover">
+                                <span class="rank-badge">3</span>
+                            </div>
+                            <div class="book-details">
+                                <span class="book-title">T1984</span>
+                                <span class="author">George Orwell</span>
+                                <span class="borrow-count">35 <span style="font-weight: 100;">times borrowed</span></span>
+                            </div>
+                        </li><li>
+                            <div class="book-cover">
+                                <span class="rank-badge">4</span>
+                            </div>
+                            <div class="book-details">
+                                <span class="book-title">The Hobbit</span>
+                                <span class="author">J.R.R. Tolkien</span>
+                                <span class="borrow-count">31 <span style="font-weight: 100;">times borrowed</span></span>
+                            </div>
+                        </li><li>
+                            <div class="book-cover">
+                                <span class="rank-badge">5</span>
+                            </div>
+                            <div class="book-details">
+                                <span class="book-title">Harry Potter and the Philosopher's Stone</span>
+                                <span class="author">J.K. Rowling</span>
+                                <span class="borrow-count">29 <span style="font-weight: 100;">times borrowed</span></span>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="view-all">View Full Report</a>
+                </section>
             </div>
         </div>
-    </body>
-    
+    </div>
 </body>
+
 </html>

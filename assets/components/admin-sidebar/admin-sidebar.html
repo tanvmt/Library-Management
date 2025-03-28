@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="admin-sidebar.css">
+    <link rel="stylesheet" href="/assets/components/admin-sidebar/admin-sidebar.css">
 </head>
 <body>
     <div class="sidebar-container">
-        <button class="dashboard" id="dashboard">
+        <button class="dashboard" id="dashboard" onclick="window.location.href = '/pages/admin/dashboard/dashboard.html'"> 
             <i class="fa-solid fa-chart-column"></i>
             <span class="dashboard-text">Dashboard</span>
         </button>
@@ -18,14 +18,14 @@
             <span class="books-text">Books</span>
         </button>
         <button class="users" id="users">
-            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-user-group"></i>
             <span class="users-text">Users</span>
         </button>
         <button class="borrowings" id="borrowings">
             <i class="fa-solid fa-clock"></i>
             <span class="borrowings-text">Borrowings</span>
         </button>
-        <button class="reports" id="reports">
+        <button class="reports" id="reports" onclick="window.location.href = '/pages/admin/reports/reports.html'">
             <i class="fa-solid fa-chart-line"></i>
             <span class="reports-text">Reports</span>
         </button>

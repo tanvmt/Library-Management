@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+    <script src="/assets/components/admin-header/admin-header.js"></script>
+    <script src="/assets/components/admin-sidebar/admin-sidebar.js"></script>
+    <link rel="stylesheet" href="/assets/components/admin-header/admin-header.css">
+    <link rel="stylesheet" href="/assets/components/admin-sidebar/admin-sidebar.css">
+    <link rel="stylesheet" href="reports.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+<body>
+    <header id="admin-header"></header>
+    <body>
+        <div class="reports-layout">
+            <div id="admin-sidebar"></div>
+            <div class="main-container">
+                <header class="page-header">
+                    <h1>Reports & Analytics</h1>
+                    <div class="page-actions">
+                        <span>Date Range:</span>
+                        <select name="range" id="range">
+                            <option value="1">Last 30 Days</option>
+                            <option value="2">Last 90 Days</option>
+                            <option value="3">Last 6 Months</option>
+                            <option value="4">Last Year</option>
+                            <option value="5">All Time</option>
+                        </select>
+                        <button class="btn btn-primary"> <i class="fa-solid fa-download"></i> Export</button>
+                    </div>
+                </header>
+                <section class="reports-stats">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title" style="color: gray;">Total Borrowings</span>
+                            <span class="card-number">1,248</span>
+                            <span class="positive" style="font-size: 0.8em;"><span style="font-weight: bold;">+12%</span> from last month</span>
+                        </div>
+                        <div class="card-icon">
+                            <div class="card-icon-1 blue-icon large-icon">
+                                <i class="fa-solid fa-chart-simple"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title" style="color: gray;">Active Users</span>
+                            <span class="card-number">487</span>
+                            <span class="positive" style="font-size: 0.8em;"><span style="font-weight: bold;">+8%</span> from last month</span>
+                        </div>
+                        <div class="card-icon">
+                            <div class="card-icon-1 purple-icon large-icon">
+                                <i class="fa-solid fa-user-group"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title" style="color: gray;">Return Rate</span>
+                            <span class="card-number">94%</span>
+                            <span class="positive" style="font-size: 0.8em;"><span style="font-weight: bold;">+2%</span> from last month</span>
+                        </div>
+                        <div class="card-icon">
+                            <div class="card-icon-1 green-icon large-icon">
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title" style="color: gray;">Overdue Rate</span>
+                            <span class="card-number">6%</span>
+                            <span class="negative" style="font-size: 0.8em;"><span style="font-weight: bold;">+1%</span> from last month</span>
+                        </div>
+                        <div class="card-icon">
+                            <div class="card-icon-1 red-icon large-icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="charts">
+                    <section class="category-chart">
+                        <div class="chart-header">
+                            <h2>Borrowings by Category</h2>
+                            <button><i class="fa-solid fa-download"></i></button> 
+                        </div>
+                        <canvas id="category-chart" style="width: 100%;"></canvas>
+                        <script src="category.js"></script>                   
+                    </section>
+                    <section class="monthly-chart">
+                        <div class="chart-header">
+                            <h2>Monthly Borrowings</h2>
+                            <button><i class="fa-solid fa-download"></i></button>
+                        </div>
+                        <canvas id="monthly-chart" style="width: 100%;"></canvas>
+                        <script src="monthly.js"></script>  
+                    </section>
+                </div>
+                <div class="available-reports">
+                    <div class="reports-container">
+                        <h2>Available Reports</h2>
+                        <div class="reports-row">
+                            <div class="report">
+                                <div class="report-content">
+                                    <div class="card-icon-1 blue-icon small-icon">
+                                        <i class="fa-solid fa-book"></i>
+                                    </div>
+                                    <div class="report-details">
+                                        <p class="report-title">Popular Books Report</p>
+                                        <p class="report-description">View the number of borrowings by category</p>
+                                    </div>
+                                </div>
+                                <div class="report-footer">
+                                    <span class="time"><i class="fa-solid fa-calendar"></i> 2 days ago</span>
+                                    <a href="#" class="generate">Generate</a>
+                                </div>
+                            </div>
+                            <div class="report">
+                                <div class="report-content">
+                                    <div class="card-icon-1 blue-icon small-icon">
+                                        <i class="fa-solid fa-book"></i>
+                                    </div>
+                                    <div class="report-details">
+                                        <p class="report-title">Popular Books Report</p>
+                                        <p class="report-description">View the number of borrowings by category</p>
+                                    </div>
+                                </div>
+                                <div class="report-footer">
+                                    <span class="time"><i class="fa-solid fa-calendar"></i> 2 days ago</span>
+                                    <a href="#" class="generate">Generate</a>
+                                </div>
+                            </div>
+                            <div class="report">
+                                <div class="report-content">
+                                    <div class="card-icon-1 blue-icon small-icon">
+                                        <i class="fa-solid fa-book"></i>
+                                    </div>
+                                    <div class="report-details">
+                                        <p class="report-title">Popular Books Report</p>
+                                        <p class="report-description">View the number of borrowings by category</p>
+                                    </div>
+                                </div>
+                                <div class="report-footer">
+                                    <span class="time"><i class="fa-solid fa-calendar"></i> 2 days ago</span>
+                                    <a href="#" class="generate">Generate</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reports-row">
+                            <div class="report">
+                                <div class="report-content">
+                                    <div class="card-icon-1 blue-icon small-icon">
+                                        <i class="fa-solid fa-book"></i>
+                                    </div>
+                                    <div class="report-details">
+                                        <p class="report-title">Popular Books Report</p>
+                                        <p class="report-description">View the number of borrowings by category</p>
+                                    </div>
+                                </div>
+                                <div class="report-footer">
+                                    <span class="time"><i class="fa-solid fa-calendar"></i> 2 days ago</span>
+                                    <a href="#" class="generate">Generate</a>
+                                </div>
+                            </div>
+                            <div class="report">
+                                <div class="report-content">
+                                    <div class="card-icon-1 blue-icon small-icon">
+                                        <i class="fa-solid fa-book"></i>
+                                    </div>
+                                    <div class="report-details">
+                                        <p class="report-title">Popular Books Report</p>
+                                        <p class="report-description">View the number of borrowings by category</p>
+                                    </div>
+                                </div>
+                                <div class="report-footer">
+                                    <span class="time"><i class="fa-solid fa-calendar"></i> 2 days ago</span>
+                                    <a href="#" class="generate">Generate</a>
+                                </div>
+                            </div>
+                            <div class="report">
+                                <div class="report-content">
+                                    <div class="card-icon-1 blue-icon small-icon">
+                                        <i class="fa-solid fa-book"></i>
+                                    </div>
+                                    <div class="report-details">
+                                        <p class="report-title">Popular Books Report</p>
+                                        <p class="report-description">View the number of borrowings by category</p>
+                                    </div>
+                                </div>
+                                <div class="report-footer">
+                                    <span class="time"><i class="fa-solid fa-calendar"></i> 2 days ago</span>
+                                    <a href="#" class="generate">Generate</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</body>
+</html>
