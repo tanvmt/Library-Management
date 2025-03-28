@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("../components/book-item.html") // Load book-item
+    fetch("/assets/components/default-footer/default-footer.html")
         .then(response => response.text())
         .then(html => {
-            document.getElementById("book-item").innerHTML = html;
+            document.getElementById("default-footer").innerHTML = html;
         });
 });

@@ -5,20 +5,24 @@
     font-family: Arial, sans-serif;
 }
 
+body {
+    background-color: #f8f9fa;
+}
+
 .navbar {
-    height: 14vh;
+    height: 12vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: rgb(17, 24, 39);
+    background-color: rgb(255, 255, 255);
 }
 
 .logo {
-    padding-left: 2vw;
-    font-size: 3rem;
+    margin-left: 2vw;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
+    color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     gap: 5px;
@@ -26,16 +30,21 @@
 
 .search-container {
     position: relative;
-    width: 15vw;
+    width: 20vw;
+    height: 6vh;
+    margin-left: 50vw;
 }
 
 .search-input {
     width: 100%;
+    height: 100%;
     padding: 8px 12px 8px 35px; /* Đẩy nội dung sang phải để icon không che mất */
-    border: 1px solid #ddd;
+    border: 1px solid rgb(156, 163, 175);
     border-radius: 20px;
     outline: none;
     font-size: 14px;
+    color:rgb(156, 163, 175);
+    background-color: rgb(255, 255, 255);
 }
 
 .search-icon {
@@ -43,20 +52,27 @@
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
-    color: #888;
+    color: rgb(156, 163, 175);
     font-size: 14px;
 }
 
-.login-btn {
-    padding: 8px 16px;
+.login-btn{
+    display:flex;
+    justify-content: stretch;
+    gap: 0.6rem;
     background-color: #007bff;
     color: white;
-    border: none;
-    border-radius: 5px;
+    border: 0;
+    padding: 2vh 1.5vw;
+    margin-right: 2vw;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
 }
 
-.login-btn:hover {
+.login-btn:hover{
     background-color: #0056b3;
 }
+
+
