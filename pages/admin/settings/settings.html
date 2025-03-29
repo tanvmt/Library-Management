@@ -20,108 +20,110 @@
             <header class="page-header">
                 <h1>Settings</h1>
             </header>
-            <section class="settings-container">
-                <div class="sidebar">
-                    <div class="general">
-                        <p class="title">GENERAL</p>
-                        <button class="general-settings btn-active">
-                            <i class="fa-solid fa-cog"></i>
-                            <span class="general-settings-text">General Settings</span>
-                        </button>
-                        <button class="notifications">
-                            <i class="fa-solid fa-bell"></i>
-                            <span class="notifications-text">Notifications</span>
-                        </button>
-                        <button class="email-templates">
-                            <i class="fa-solid fa-envelope"></i>
-                            <span class="email-templates-text">Email Templates</span>
-                        </button>
+            <div style="padding: 20px;">
+                <section class="settings-container">
+                    <div class="sidebar">
+                        <div class="general">
+                            <p class="title">GENERAL</p>
+                            <button class="general-settings btn-active">
+                                <i class="fa-solid fa-cog"></i>
+                                <span class="general-settings-text">General Settings</span>
+                            </button>
+                            <button class="notifications">
+                                <i class="fa-solid fa-bell"></i>
+                                <span class="notifications-text">Notifications</span>
+                            </button>
+                            <button class="email-templates">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span class="email-templates-text">Email Templates</span>
+                            </button>
+                        </div>
+                        <div class="system">
+                            <p class="title">SYSTEM</p>
+                            <button class="security">
+                                <i class="fa-solid fa-shield-alt"></i>
+                                <span class="security-text">Security</span>
+                            </button>
+                            <button class="database">
+                                <i class="fa-solid fa-database"></i>
+                                <span class="database-text">Database</span>
+                            </button>
+                            <button class="help-support">
+                                <i class="fa-solid fa-headset"></i>
+                                <span class="help-support-text">Help & Support</span>
+                            </button>
+                        </div>
                     </div>
-                    <div class="system">
-                        <p class="title">SYSTEM</p>
-                        <button class="security">
-                            <i class="fa-solid fa-shield-alt"></i>
-                            <span class="security-text">Security</span>
-                        </button>
-                        <button class="database">
-                            <i class="fa-solid fa-database"></i>
-                            <span class="database-text">Database</span>
-                        </button>
-                        <button class="help-support">
-                            <i class="fa-solid fa-headset"></i>
-                            <span class="help-support-text">Help & Support</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="general-settings-content">
-                        <h2>General Settings</h2>
-                        <form class="form">
-                            <div class="form-group">
-                                <label for="library_name">Library Name</label>
-                                <input type="text" id="library_name" name="library_name" value="LibraryHub">
-                            </div>
-                            <div class="form-group">
-                                <label for="address">Address</label>
-                                <input type="text" id="address" name="address" value="123 Library Street, Booktown, BK 12345">
-                            </div>
-                            <div class="form-group">
-                                <label for="contact_email">Contact Email</label>
-                                <input type="email" id="contact_email" name="contact_email" value="contact@libraryhub.com">
-                            </div>
-                            <div class="form-group">
-                                <label for="contact_phone">Contact Phone</label>
-                                <input type="text" id="contact_phone" name="contact_phone" value="(555) 123-4567">
-                            </div>
-                            <div class="form-group">
-                                <label for="library_name">Library Hours</label>
-                                <div class="form-group-1">
-                                    <div class="form-group-2">
-                                        <label for="weekdays">Weekdays</label>
-                                        <input type="text" id="weekdays" name="weekdays" value="9:00 AM - 8:00 PM">
+                    <div class="content">
+                        <div class="general-settings-content">
+                            <h2>General Settings</h2>
+                            <form class="form">
+                                <div class="form-group">
+                                    <label for="library_name">Library Name</label>
+                                    <input type="text" id="library_name" name="library_name" value="LibraryHub">
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">Address</label>
+                                    <input type="text" id="address" name="address" value="123 Library Street, Booktown, BK 12345">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact_email">Contact Email</label>
+                                    <input type="email" id="contact_email" name="contact_email" value="contact@libraryhub.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact_phone">Contact Phone</label>
+                                    <input type="text" id="contact_phone" name="contact_phone" value="(555) 123-4567">
+                                </div>
+                                <div class="form-group">
+                                    <label for="library_name">Library Hours</label>
+                                    <div class="form-group-1">
+                                        <div class="form-group-2">
+                                            <label for="weekdays">Weekdays</label>
+                                            <input type="text" id="weekdays" name="weekdays" value="9:00 AM - 8:00 PM">
+                                        </div>
+                                        <div class="form-group-2">
+                                            <label for="weekends">Weekends</label>
+                                            <input type="text" id="weekends" name="weekends" value="10:00 AM - 6:00 PM">
+                                        </div>
+                                        </div>
                                     </div>
-                                    <div class="form-group-2">
-                                        <label for="weekends">Weekends</label>
-                                        <input type="text" id="weekends" name="weekends" value="10:00 AM - 6:00 PM">
-                                    </div>
+                                <div class="form-group">
+                                    <label for="library_name">Borrowing Settings</label>
+                                    <div class="form-group-1">
+                                        <div class="form-group-2">
+                                            <label for="max_books">Max Books Per User</label>
+                                            <input type="number" id="max_books" name="max_books" value="5">
+                                        </div>
+                                        <div class="form-group-2">
+                                            <label for="loan_period">Loan Period (days)</label>
+                                            <input type="number" id="loan_period" name="loan_period" value="30">
+                                        </div>
                                     </div>
                                 </div>
-                            <div class="form-group">
-                                <label for="library_name">Borrowing Settings</label>
-                                <div class="form-group-1">
-                                    <div class="form-group-2">
-                                        <label for="max_books">Max Books Per User</label>
-                                        <input type="number" id="max_books" name="max_books" value="5">
-                                    </div>
-                                    <div class="form-group-2">
-                                        <label for="loan_period">Loan Period (days)</label>
-                                        <input type="number" id="loan_period" name="loan_period" value="30">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="library_name">Fine Settings</label>
-                                <div class="form-group-1">
-                                    <div class="form-group-2">
-                                        <label for="fine_amount">Fine Amount (per day)</label>
-                                        <input type="text" id="fine_amount" name="fine_amount" value="$ 0.50">
-                                    </div>
-                                    <div class="form-group-2">
-                                        <label for="grace_period">Grace Period (days)</label>
-                                        <input type="number" id="grace_period" name="grace_period" value="3">
+                                <div class="form-group">
+                                    <label for="library_name">Fine Settings</label>
+                                    <div class="form-group-1">
+                                        <div class="form-group-2">
+                                            <label for="fine_amount">Fine Amount (per day)</label>
+                                            <input type="text" id="fine_amount" name="fine_amount" value="$ 0.50">
+                                        </div>
+                                        <div class="form-group-2">
+                                            <label for="grace_period">Grace Period (days)</label>
+                                            <input type="number" id="grace_period" name="grace_period" value="3">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-actions">
-                                <button type="submit" class="submit-btn">
-                                    <i class="fa-solid fa-floppy-disk"></i> Save Settings
-                                </button>
-                            </div>
-                                
-                        </form>
+                                <div class="form-actions">
+                                    <button type="submit" class="submit-btn">
+                                        <i class="fa-solid fa-floppy-disk"></i> Save Settings
+                                    </button>
+                                </div>
+                                    
+                            </form>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
     </div>
 </body>
