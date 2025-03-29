@@ -1,28 +1,3 @@
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.dashboard-layout {
-    display: flex;
-}
-
-.main-container {
-    flex: 1;
-    padding: 20px;
-    overflow: auto;
-    background-color: rgb(243, 244, 246);
-}
-
-.page-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: rgb(0, 0, 0);
-    padding: 10px 20px;
-    border-radius: 10px;
-}
-
 .dashboard-stats {
     display: flex;
     padding: 10px 20px;
