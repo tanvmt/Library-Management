@@ -50,6 +50,11 @@ footer {
 .footer-content a{
     color: rgb(209, 213, 219);
     text-decoration: none;
+    width: fit-content;
+}
+
+.footer-container a:hover{
+    color: white;
 }
 
 .social-icons{
