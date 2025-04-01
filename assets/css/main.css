@@ -2,11 +2,11 @@ body {
     display: flex;
     flex-direction: column;
 }
-  
+
 .main-layout {
     display: flex;
 }
-  
+
 .main-container {
     flex: 1;
     padding: 20px;
