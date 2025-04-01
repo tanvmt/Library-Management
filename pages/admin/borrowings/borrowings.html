@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users Management</title>
+    <script src="/assets/components/admin-header/admin-header.js"></script>
+    <script src="/assets/components/admin-sidebar/admin-sidebar.js"></script>
+    <link rel="stylesheet" href="/assets/components/admin-header/admin-header.css">
+    <link rel="stylesheet" href="/assets/components/admin-sidebar/admin-sidebar.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="../books/books.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <header id="admin-header"></header>
+    <div class="main-layout">
+        <div id="admin-sidebar"></div>
+        <div class="main-container">
+            <header class="page-header">
+                <h1>Borrowings Management</h1>
+            </header>
+            <div class="book-table-container">
+
+                <div class="table-header">
+                    Borrowing Collection
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Mã mượn</th>
+                                <th>Người mượn</th>
+                                <th>Tên sách</th>
+                                <th>Ngày mượn</th>
+                                <th>Hạn trả</th>
+                                <th>Ngày trả</th>
+                                <th>Trạng thái</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>BRW-001</td>
+                                <td>Nguyễn Văn A</td>
+                                <td>Tây Du Ký - Tập 1</td>
+                                <td>15/03/2023</td>
+                                <td>29/03/2023</td>
+                                <td>28/03/2023</td>
+                                <td><span class="status-badge returned">Đã trả</span></td>
+                                <td class="actions">
+                                    <button class="btn btn-edit btn-icon"><i class="fas fa-edit"></i></button>
+                                    <button class="btn btn-delete btn-icon"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BRW-002</td>
+                                <td>Trần Thị B</td>
+                                <td>Harry Potter và Hòn đá Phù thủy</td>
+                                <td>18/03/2023</td>
+                                <td>01/04/2023</td>
+                                <td>30/03/2023</td>
+                                <td><span class="status-badge returned">Đã trả</span></td>
+                                <td class="actions">
+                                    <button class="btn btn-edit btn-icon"><i class="fas fa-edit"></i></button>
+                                    <button class="btn btn-delete btn-icon"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BRW-003</td>
+                                <td>Lê Văn C</td>
+                                <td>Đắc nhân tâm</td>
+                                <td>20/03/2023</td>
+                                <td>03/04/2023</td>
+                                <td>-</td>
+                                <td><span class="status-badge active">Đang mượn</span></td>
+                                <td class="actions">
+                                    <button class="btn btn-edit btn-icon"><i class="fas fa-edit"></i></button>
+                                    <button class="btn btn-delete btn-icon"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BRW-004</td>
+                                <td>Phạm Thị D</td>
+                                <td>Nhà giả kim</td>
+                                <td>22/03/2023</td>
+                                <td>05/04/2023</td>
+                                <td>-</td>
+                                <td><span class="status-badge overdue">Quá hạn</span></td>
+                                <td class="actions">
+                                    <button class="btn btn-edit btn-icon"><i class="fas fa-edit"></i></button>
+                                    <button class="btn btn-delete btn-icon"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BRW-005</td>
+                                <td>Hoàng Văn E</td>
+                                <td>Tiếng chim hót trong bụi mận gai</td>
+                                <td>25/03/2023</td>
+                                <td>08/04/2023</td>
+                                <td>05/04/2023</td>
+                                <td><span class="status-badge returned">Đã trả</span></td>
+                                <td class="actions">
+                                    <button class="btn btn-edit btn-icon"><i class="fas fa-edit"></i></button>
+                                    <button class="btn btn-delete btn-icon"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BRW-006</td>
+                                <td>Ngô Thị F</td>
+                                <td>Bắt trẻ đồng xanh</td>
+                                <td>27/03/2023</td>
+                                <td>10/04/2023</td>
+                                <td>-</td>
+                                <td><span class="status-badge active">Đang mượn</span></td>
+                                <td class="actions">
+                                    <button class="btn btn-edit btn-icon"><i class="fas fa-edit"></i></button>
+                                    <button class="btn btn-delete btn-icon"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BRW-007</td>
+                                <td>Vũ Văn G</td>
+                                <td>Cuốn theo chiều gió</td>
+                                <td>28/03/2023</td>
+                                <td>11/04/2023</td>
+                                <td>-</td>
+                                <td><span class="status-badge active">Đang mượn</span></td>
+                                <td class="actions">
+                                    <button class="btn btn-edit btn-icon"><i class="fas fa-edit"></i></button>
+                                    <button class="btn btn-delete btn-icon"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BRW-008</td>
+                                <td>Đặng Thị H</td>
+                                <td>Ông già và biển cả</td>
+                                <td>30/03/2023</td>
+                                <td>13/04/2023</td>
+                                <td>12/04/2023</td>
+                                <td><span class="status-badge returned">Đã trả</span></td>
+                                <td class="actions">
+                                    <button class="btn btn-edit btn-icon"><i class="fas fa-edit"></i></button>
+                                    <button class="btn btn-delete btn-icon"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BRW-009</td>
+                                <td>Bùi Văn I</td>
+                                <td>Trăm năm cô đơn</td>
+                                <td>01/04/2023</td>
+                                <td>15/04/2023</td>
+                                <td>-</td>
+                                <td><span class="status-badge overdue">Quá hạn</span></td>
+                                <td class="actions">
+                                    <button class="btn btn-edit btn-icon"><i class="fas fa-edit"></i></button>
+                                    <button class="btn btn-delete btn-icon"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BRW-010</td>
+                                <td>Trương Thị K</td>
+                                <td>1984</td>
+                                <td>03/04/2023</td>
+                                <td>17/04/2023</td>
+                                <td>16/04/2023</td>
+                                <td><span class="status-badge returned">Đã trả</span></td>
+                                <td class="actions">
+                                    <button class="btn btn-edit btn-icon"><i class="fas fa-edit"></i></button>
+                                    <button class="btn btn-delete btn-icon"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BRW-011</td>
+                                <td>Lý Văn L</td>
+                                <td>Kiêu hãnh và định kiến</td>
+                                <td>05/04/2023</td>
+                                <td>19/04/2023</td>
+                                <td>-</td>
+                                <td><span class="status-badge active">Đang mượn</span></td>
+                                <td class="actions">
+                                    <button class="btn btn-edit btn-icon"><i class="fas fa-edit"></i></button>
+                                    <button class="btn btn-delete btn-icon"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BRW-012</td>
+                                <td>Phan Thị M</td>
+                                <td>Người tình</td>
+                                <td>07/04/2023</td>
+                                <td>21/04/2023</td>
+                                <td>-</td>
+                                <td><span class="status-badge active">Đang mượn</span></td>
+                                <td class="actions">
+                                    <button class="btn btn-edit btn-icon"><i class="fas fa-edit"></i></button>
+                                    <button class="btn btn-delete btn-icon"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BRW-013</td>
+                                <td>Võ Văn N</td>
+                                <td>Đồi gió hú</td>
+                                <td>09/04/2023</td>
+                                <td>23/04/2023</td>
+                                <td>-</td>
+                                <td><span class="status-badge active">Đang mượn</span></td>
+                                <td class="actions">
+                                    <button class="btn btn-edit btn-icon"><i class="fas fa-edit"></i></button>
+                                    <button class="btn btn-delete btn-icon"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BRW-014</td>
+                                <td>Đỗ Thị O</td>
+                                <td>Tiếng gọi nơi hoang dã</td>
+                                <td>10/04/2023</td>
+                                <td>24/04/2023</td>
+                                <td>22/04/2023</td>
+                                <td><span class="status-badge returned">Đã trả</span></td>
+                                <td class="actions">
+                                    <button class="btn btn-edit btn-icon"><i class="fas fa-edit"></i></button>
+                                    <button class="btn btn-delete btn-icon"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BRW-015</td>
+                                <td>Hồ Văn P</td>
+                                <td>Chú bé mang pyjama sọc</td>
+                                <td>12/04/2023</td>
+                                <td>26/04/2023</td>
+                                <td>-</td>
+                                <td><span class="status-badge overdue">Quá hạn</span></td>
+                                <td class="actions">
+                                    <button class="btn btn-edit btn-icon"><i class="fas fa-edit"></i></button>
+                                    <button class="btn btn-delete btn-icon"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BRW-016</td>
+                                <td>Nguyễn Thị Q</td>
+                                <td>Lolita</td>
+                                <td>14/04/2023</td>
+                                <td>28/04/2023</td>
+                                <td>-</td>
+                                <td><span class="status-badge active">Đang mượn</span></td>
+                                <td class="actions">
+                                    <button class="btn btn-edit btn-icon"><i class="fas fa-edit"></i></button>
+                                    <button class="btn btn-delete btn-icon"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BRW-017</td>
+                                <td>Trần Văn R</td>
+                                <td>Gatsby vĩ đại</td>
+                                <td>16/04/2023</td>
+                                <td>30/04/2023</td>
+                                <td>29/04/2023</td>
+                                <td><span class="status-badge returned">Đã trả</span></td>
+                                <td class="actions">
+                                    <button class="btn btn-edit btn-icon"><i class="fas fa-edit"></i></button>
+                                    <button class="btn btn-delete btn-icon"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BRW-018</td>
+                                <td>Lê Thị S</td>
+                                <td>Kẻ trộm sách</td>
+                                <td>18/04/2023</td>
+                                <td>02/05/2023</td>
+                                <td>-</td>
+                                <td><span class="status-badge active">Đang mượn</span></td>
+                                <td class="actions">
+                                    <button class="btn btn-edit btn-icon"><i class="fas fa-edit"></i></button>
+                                    <button class="btn btn-delete btn-icon"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+</body>
