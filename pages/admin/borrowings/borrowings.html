@@ -27,18 +27,43 @@
                 <div class="table-header">
                     Borrowing Collection
                 </div>
+                <div class="controls">
+                    <div class="search-book-container">
+                        <input type="text" class="search-book-input"
+                            placeholder="Search by Loan ID, Title, Borrower, or Status...">
+                        <button class="btn btn-filter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                            </svg>
+                            Filter
+                        </button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-sort">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <polyline points="19 12 12 19 5 12"></polyline>
+                            </svg>
+                            Sort
+                        </button>
+                    </div>
+                </div>
                 <div class="table-wrapper">
                     <table>
                         <thead>
                             <tr>
-                                <th>Mã mượn</th>
-                                <th>Người mượn</th>
-                                <th>Tên sách</th>
-                                <th>Ngày mượn</th>
-                                <th>Hạn trả</th>
-                                <th>Ngày trả</th>
-                                <th>Trạng thái</th>
-                                <th>Thao tác</th>
+                                <th>Loan ID</th>
+                                <th>Borrower</th>
+                                <th>Book Title</th>
+                                <th>Borrow Date</th>
+                                <th>Due Date</th>
+                                <th>Return Date</th>
+                                <th>Status</th>
+                                <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
