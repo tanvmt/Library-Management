@@ -40,6 +40,12 @@
     border-radius: 8px;
 }
 
+.book-image img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+}
+
 .buttons {
     display: flex;
     flex-direction: column;
