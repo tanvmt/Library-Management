@@ -1,0 +1,259 @@
+/* Basic Reset & Body Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Light background for the whole page */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main Container Layout */
+.library-container {
+    display: flex;
+    max-width: 1400px; /* Max width of the content */
+    margin: 20px auto; /* Center the container with some margin */
+    background-color: #fff; /* White background for the content area */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    min-height: 80vh; /* Ensure it takes up decent height */
+}
+
+/* Sidebar Styles */
+.filters-sidebar {
+    width: 260px; /* Fixed width for the sidebar */
+    padding: 20px;
+    border-right: 1px solid #e0e0e0; /* Separator line */
+    flex-shrink: 0; /* Prevent sidebar from shrinking */
+}
+
+.filters-sidebar h2 {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.filters-sidebar h2 i {
+    margin-right: 8px;
+    color: #007bff; /* Icon color */
+}
+
+.filter-group {
+    margin-bottom: 25px;
+}
+
+.filter-group h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #444;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.filter-group ul {
+    list-style: none;
+}
+
+.filter-group li {
+    margin-bottom: 8px;
+}
+
+.filter-group label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 0.95em;
+    color: #666;
+}
+
+.filter-group input[type="checkbox"],
+.filter-group input[type="radio"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.apply-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: #0056b3;
+}
+
+/* Main Content Area */
+.book-content {
+    flex-grow: 1; /* Take up remaining space */
+    padding: 20px 30px; /* Padding around the book content */
+}
+
+.main-title {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Toolbar (Count and Sort) */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.book-count {
+    color: #666;
+    font-size: 0.95em;
+}
+
+.sort-options label {
+    margin-right: 8px;
+    color: #555;
+}
+
+.sort-options select {
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* Book Grid Layout */
+.book-grid {
+    display: grid;
+    /* Responsive grid: Creates as many columns as fit, minimum 220px wide */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px; /* Space between grid items */
+}
+
+/* Individual Book Card Styles */
+.book-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden; /* Ensure border-radius applies to placeholder */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.book-image-placeholder {
+    background-color: #f0f0f0; /* Light gray for placeholder */
+    height: 180px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    border-radius: 4px; /* Slightly rounded corners for placeholder */
+}
+
+.book-image-placeholder i {
+    font-size: 40px; /* Icon size */
+    color: #ccc; /* Icon color */
+}
+
+.book-card h3 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #333;
+    /* Prevent long titles from breaking layout */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.book-card .author {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.book-card .genre {
+    font-size: 0.85em;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.card-footer {
+    margin-top: auto; /* Pushes footer to the bottom */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px; /* Space above the footer */
+    border-top: 1px solid #f5f5f5; /* Subtle separator */
+}
+
+.status {
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 12px; /* Pill shape */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status.available {
+    background-color: #d4edda; /* Light green */
+    color: #155724; /* Dark green */
+}
+
+.status.borrowed {
+    background-color: #f8d7da; /* Light red */
+    color: #721c24; /* Dark red */
+}
+
+.details-link {
+    font-size: 0.9em;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.details-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments (Optional Example) */
+@media (max-width: 768px) {
+    .library-container {
+        flex-direction: column; /* Stack sidebar and content */
+        margin: 10px;
+    }
+
+    .filters-sidebar {
+        width: 100%; /* Full width on smaller screens */
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+        margin-bottom: 20px;
+    }
+
+    .book-content {
+        padding: 20px;
+    }
+
+     .book-grid {
+        /* Adjust columns for smaller screens if needed */
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 15px;
+    }
+}

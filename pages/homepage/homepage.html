@@ -9,10 +9,101 @@
     <script src="/assets/components/default-footer/default-footer.js"></script>
     <link rel="stylesheet" href="/assets/components/default-footer/default-footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="homepage.css">
 
 </head>
 <body>
     <header id="default-header"></header>
+    <div id="content">
+        <div class = "introduce-part">
+            <h2>Welcome to LibraryHub</h2>
+            <p>Discover, borrow, and manage your reading journey with our extensive collection.</p>
+            <div class="introduce-buttons">
+                <button>Browser Books</button>
+                <button>Register Now</button>    
+            </div>
+        </div>
+        <div class="featured-books">
+            <h2>Featured Books</h2>
+            <div class="book-item">
+                <div class="book-item-body">
+                    <h3 class='book-name'>The Great Gatsby</h3>
+                    <p class = 'book-author'>by F. Scott Fitzgerald</p>
+                    <img src = '' alt = 'Name' class = 'book-image'>
+                    <div class = 'book-status'>
+                        <span class= 'status-available'>Available</span>
+                        <a href="#" class="details-link">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="book-item">
+                <div class="book-item-body">
+                    <h3 class='book-name'>To Kill a Mockingbird</h3>
+                    <p class = 'book-author'>by Harper Lee</p>
+                    <img src = '#' alt = 'Name' class = 'book-image'>
+                    <div class = 'book-status'>
+                        <span class= 'status-available'>Available</span>
+                        <a href="#" class="details-link">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="book-item">
+                <div class="book-item-body">
+                    <h3 class='book-name'>1984</h3>
+                    <p class = 'book-author'>by George Orwell</p>
+                    <img src = '#' alt = 'Name' class = 'book-image'>
+                    <div class = 'book-status'>
+                        <span class= 'status-available'>Available</span>
+                        <a href="#" class="details-link">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="book-item">
+                <div class="book-item-body">
+                    <h3 class='book-name'>Pride and Prejudice</h3>
+                    <p class = 'book-author'>by Jane Austen</p>
+                    <img src = '#' alt = 'Name' class = 'book-image'>
+                    <div class = 'book-status'>
+                        <span class= 'status-available'>Available</span>
+                        <a href="#" class="details-link">Details</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="view-all-container">
+                <button class="view-all-button">View All Books</button>
+            </div>
+        </div>
+        <div class="browse-by-category">
+            <h2>Browse by Category</h2>
+            <div class="category-container">
+                <a href="/fiction" class="category-card">
+                    <h3>Fiction</h3>
+                    <p>145 books</p>
+                </a>
+                <a href="/non-fiction" class="category-card">
+                    <h3>Non-Fiction</h3>
+                    <p>112 books</p>
+                </a>
+                <a href="/science" class="category-card">
+                    <h3>Science</h3>
+                    <p>87 books</p>
+                </a>
+                <a href="/history" class="category-card">
+                    <h3>History</h3>
+                    <p>64 books</p>
+                </a>
+                <a href="/biography" class="category-card">
+                    <h3>Biography</h3>
+                    <p>53 books</p>
+                </a>
+                <a href="/fantasy" class="category-card">
+                    <h3>Fantasy</h3>
+                    <p>78 books</p>
+                </a>
+            </div>
+        </div>
+    </div>
     <footer id="default-footer"></footer>
 </body>
 </html>

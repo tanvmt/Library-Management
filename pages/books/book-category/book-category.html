@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Books - Library</title>
+    <link rel="stylesheet" href="book-category.css">
+    <!-- Add Font Awesome for icons (optional, but used in the example) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="library-container">
+
+        <!-- ==== Sidebar ==== -->
+        <aside class="filters-sidebar">
+            <h2><i class="fas fa-filter"></i> Filters</h2>
+
+            <div class="filter-group">
+                <h3>Categories</h3>
+                <ul>
+                    <li><label><input type="checkbox" name="category" value="fiction"> Fiction</label></li>
+                    <li><label><input type="checkbox" name="category" value="non-fiction"> Non-Fiction</label></li>
+                    <li><label><input type="checkbox" name="category" value="science"> Science</label></li>
+                    <li><label><input type="checkbox" name="category" value="history"> History</label></li>
+                    <li><label><input type="checkbox" name="category" value="biography"> Biography</label></li>
+                    <li><label><input type="checkbox" name="category" value="fantasy"> Fantasy</label></li>
+                </ul>
+            </div>
+
+            <div class="filter-group">
+                <h3>Availability</h3>
+                <ul>
+                    <li><label><input type="radio" name="availability" value="all" checked> All</label></li>
+                    <li><label><input type="radio" name="availability" value="available"> Available</label></li>
+                    <li><label><input type="radio" name="availability" value="borrowed"> Borrowed</label></li>
+                </ul>
+            </div>
+
+            <button class="apply-button">Apply Filters</button>
+        </aside>
+
+        <!-- ==== Main Content ==== -->
+        <main class="book-content">
+            <h1 class="main-title">All Books</h1>
+
+            <div class="toolbar">
+                <span class="book-count">Showing 9 books</span>
+                <div class="sort-options">
+                    <label for="sort-by">Sort by:</label>
+                    <select id="sort-by" name="sort-by">
+                        <option value="newest">Newest</option>
+                        <option value="title_asc">Title (A-Z)</option>
+                        <option value="title_desc">Title (Z-A)</option>
+                        <option value="author_asc">Author (A-Z)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="book-grid">
+                <!-- Book Card 1 -->
+                <div class="book-card">
+                    <div class="book-image-placeholder"><i class="fas fa-image"></i></div>
+                    <h3>The Great Gatsby</h3>
+                    <p class="author">by F. Scott Fitzgerald</p>
+                    <p class="genre">Fiction</p>
+                    <div class="card-footer">
+                        <span class="status available">Available</span>
+                        <a href="#" class="details-link">Details</a>
+                    </div>
+                </div>
+
+                <!-- Book Card 2 -->
+                <div class="book-card">
+                    <div class="book-image-placeholder"><i class="fas fa-image"></i></div>
+                    <h3>To Kill a Mockingbird</h3>
+                    <p class="author">by Harper Lee</p>
+                    <p class="genre">Fiction</p>
+                     <div class="card-footer">
+                        <span class="status borrowed">Borrowed</span>
+                        <a href="#" class="details-link">Details</a>
+                    </div>
+                </div>
+
+                <!-- Book Card 3 -->
+                <div class="book-card">
+                    <div class="book-image-placeholder"><i class="fas fa-image"></i></div>
+                    <h3>1984</h3>
+                    <p class="author">by George Orwell</p>
+                    <p class="genre">Fiction</p>
+                     <div class="card-footer">
+                        <span class="status available">Available</span>
+                        <a href="#" class="details-link">Details</a>
+                    </div>
+                </div>
+
+                <!-- Book Card 4 -->
+                 <div class="book-card">
+                    <div class="book-image-placeholder"><i class="fas fa-image"></i></div>
+                    <h3>Pride and Prejudice</h3>
+                    <p class="author">by Jane Austen</p>
+                    <p class="genre">Fiction</p>
+                     <div class="card-footer">
+                        <span class="status available">Available</span>
+                        <a href="#" class="details-link">Details</a>
+                    </div>
+                </div>
+
+                <!-- Book Card 5 -->
+                 <div class="book-card">
+                    <div class="book-image-placeholder"><i class="fas fa-image"></i></div>
+                    <h3>A Brief History of Time</h3>
+                    <p class="author">by Stephen Hawking</p>
+                    <p class="genre">Science</p>
+                     <div class="card-footer">
+                        <span class="status available">Available</span>
+                        <a href="#" class="details-link">Details</a>
+                    </div>
+                </div>
+
+                <!-- Book Card 6 -->
+                 <div class="book-card">
+                    <div class="book-image-placeholder"><i class="fas fa-image"></i></div>
+                    <h3>The Hobbit</h3>
+                    <p class="author">by J.R.R. Tolkien</p>
+                    <p class="genre">Fantasy</p>
+                     <div class="card-footer">
+                        <span class="status borrowed">Borrowed</span>
+                        <a href="#" class="details-link">Details</a>
+                    </div>
+                </div>
+
+                 <!-- Book Card 7 (Example - Add more as needed) -->
+                 <div class="book-card">
+                    <div class="book-image-placeholder"><i class="fas fa-image"></i></div>
+                    <h3>Sapiens: A Brief History of Humankind</h3>
+                    <p class="author">by Yuval Noah Harari</p>
+                    <p class="genre">Non-Fiction</p>
+                     <div class="card-footer">
+                        <span class="status available">Available</span>
+                        <a href="#" class="details-link">Details</a>
+                    </div>
+                </div>
+                 <!-- Book Card 8 -->
+                 <div class="book-card">
+                    <div class="book-image-placeholder"><i class="fas fa-image"></i></div>
+                    <h3>The Catcher in the Rye</h3>
+                    <p class="author">by J.D. Salinger</p>
+                    <p class="genre">Fiction</p>
+                     <div class="card-footer">
+                        <span class="status borrowed">Borrowed</span>
+                        <a href="#" class="details-link">Details</a>
+                    </div>
+                </div>
+                 <!-- Book Card 9 -->
+                 <div class="book-card">
+                    <div class="book-image-placeholder"><i class="fas fa-image"></i></div>
+                    <h3>Steve Jobs</h3>
+                    <p class="author">by Walter Isaacson</p>
+                    <p class="genre">Biography</p>
+                     <div class="card-footer">
+                        <span class="status available">Available</span>
+                        <a href="#" class="details-link">Details</a>
+                    </div>
+                </div>
+                <!-- Add more book cards here following the same structure -->
+
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
