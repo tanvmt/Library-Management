@@ -172,6 +172,20 @@ html {
     padding: 15px;
 }
 
+#content .featured-books .book-image {
+    display: block;
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 #content .featured-books .book-name {
     font-size: 16px;
     padding: 16px;
@@ -182,14 +196,51 @@ html {
 }
 
 #content .featured-books .book-status {
-    padding: 5px 10px;
-    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-top: 10px;
     font-size: 14px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
 }
 
 #content .featured-books .book-status .status-available {
-    background-color: #d4edda;
-    color: #155724;
+    background-color: #d1e7dd;
+    color: #0f5132;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+#content .featured-books .book-status .status-borrowed {
+    background-color: #fff3cd; 
+    color: #664d03; 
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+#content .featured-books .book-status .status-unavailable {
+    background-color: #f8d7da; 
+    color: #58151c; 
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+#content .featured-books .book-status .details-link {
+    text-decoration: none;
+    color: #007bff; 
+    font-weight: bold;
+    padding: 5px 8px; 
+    border-radius: 4px; 
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 #content .featured-books .view-all-container {
     text-align: center;
