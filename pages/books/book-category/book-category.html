@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Books - Library</title>
     <link rel="stylesheet" href="book-category.css">
-    <!-- Add Font Awesome for icons (optional, but used in the example) -->
+    <script src="/assets/components/default-header/default-header.js"></script>
+    <link rel="stylesheet" href="/assets/components/default-header/default-header.css">
+    <script src="/assets/components/default-footer/default-footer.js"></script>
+    <link rel="stylesheet" href="/assets/components/default-footer/default-footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
     <div class="library-container">
 
         <!-- ==== Sidebar ==== -->
@@ -60,7 +62,7 @@
             <div class="book-grid">
                 <!-- Book Card 1 -->
                 <div class="book-card">
-                    <div class="book-image-placeholder"><i class="fas fa-image"></i></div>
+                    <img src="/assets/images/the-great-gatsby.jpg" alt="The Great Gatsby">
                     <h3>The Great Gatsby</h3>
                     <p class="author">by F. Scott Fitzgerald</p>
                     <p class="genre">Fiction</p>
@@ -72,7 +74,7 @@
 
                 <!-- Book Card 2 -->
                 <div class="book-card">
-                    <div class="book-image-placeholder"><i class="fas fa-image"></i></div>
+                    <img src="/assets/images/to-kill-a-mockingbird.jpg" alt="To Kill A Mockingbird">
                     <h3>To Kill a Mockingbird</h3>
                     <p class="author">by Harper Lee</p>
                     <p class="genre">Fiction</p>
@@ -84,7 +86,7 @@
 
                 <!-- Book Card 3 -->
                 <div class="book-card">
-                    <div class="book-image-placeholder"><i class="fas fa-image"></i></div>
+                    <img src="/assets/images/1984.jpg" alt="1984">
                     <h3>1984</h3>
                     <p class="author">by George Orwell</p>
                     <p class="genre">Fiction</p>
@@ -96,7 +98,7 @@
 
                 <!-- Book Card 4 -->
                  <div class="book-card">
-                    <div class="book-image-placeholder"><i class="fas fa-image"></i></div>
+                    <img src="/assets/images/pride-and-prejudice.jpg" alt="Pride & Prejudice">
                     <h3>Pride and Prejudice</h3>
                     <p class="author">by Jane Austen</p>
                     <p class="genre">Fiction</p>
@@ -108,7 +110,7 @@
 
                 <!-- Book Card 5 -->
                  <div class="book-card">
-                    <div class="book-image-placeholder"><i class="fas fa-image"></i></div>
+                    <img src="/assets/images/a-brief-history-of-time.jpg" alt="A Brief History Of Time">
                     <h3>A Brief History of Time</h3>
                     <p class="author">by Stephen Hawking</p>
                     <p class="genre">Science</p>
@@ -120,7 +122,7 @@
 
                 <!-- Book Card 6 -->
                  <div class="book-card">
-                    <div class="book-image-placeholder"><i class="fas fa-image"></i></div>
+                    <img src="/assets/images/the-hobbit.jpg" alt="The Hobbit">
                     <h3>The Hobbit</h3>
                     <p class="author">by J.R.R. Tolkien</p>
                     <p class="genre">Fantasy</p>
@@ -132,7 +134,7 @@
 
                  <!-- Book Card 7 (Example - Add more as needed) -->
                  <div class="book-card">
-                    <div class="book-image-placeholder"><i class="fas fa-image"></i></div>
+                    <img src="/assets/images/sapiens-a-brief-history-of-humankind.jpg" alt="Sapiens: A Brief History of Humankind">
                     <h3>Sapiens: A Brief History of Humankind</h3>
                     <p class="author">by Yuval Noah Harari</p>
                     <p class="genre">Non-Fiction</p>
@@ -143,7 +145,7 @@
                 </div>
                  <!-- Book Card 8 -->
                  <div class="book-card">
-                    <div class="book-image-placeholder"><i class="fas fa-image"></i></div>
+                    <img src="/assets/images/the-catcher-in-the-rye.jpg" alt="The Catcher in the Rye">
                     <h3>The Catcher in the Rye</h3>
                     <p class="author">by J.D. Salinger</p>
                     <p class="genre">Fiction</p>
@@ -154,7 +156,7 @@
                 </div>
                  <!-- Book Card 9 -->
                  <div class="book-card">
-                    <div class="book-image-placeholder"><i class="fas fa-image"></i></div>
+                    <img src="/assets/images/steve-jobs.jpg" alt="Steve Jobs">
                     <h3>Steve Jobs</h3>
                     <p class="author">by Walter Isaacson</p>
                     <p class="genre">Biography</p>
@@ -163,12 +165,11 @@
                         <a href="#" class="details-link">Details</a>
                     </div>
                 </div>
-                <!-- Add more book cards here following the same structure -->
 
             </div>
         </main>
 
     </div>
-
+    <footer id="default-footer"></footer>
 </body>
 </html>
