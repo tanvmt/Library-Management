@@ -1,4 +1,4 @@
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function () {
     var canvas = document.getElementById("category-chart");
     if (!canvas) {
         console.error("Canvas element not found!");
@@ -22,7 +22,6 @@ window.onload = function () {
         },
         options: {
             legend: { display: false },
-            // maintainAspectRatio: false,
             scales: {
                 yAxes: [{
                     ticks: { beginAtZero: true }
@@ -30,4 +29,4 @@ window.onload = function () {
             }
         }
     });
-};
+});

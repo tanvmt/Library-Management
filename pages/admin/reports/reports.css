@@ -85,6 +85,11 @@
     color: #ef4444;
     background: #fee2e2;
 }
+
+.gray-icon {
+    color: gray;
+    background: #f3f4f6;
+}
   
 .large-icon {
     width: 50px;
@@ -183,6 +188,8 @@
 .report {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    flex:1;
     gap: 10px;
     border: 1px solid #d1d5db;
     border-radius: 10px;
